@@ -58,7 +58,8 @@ ConstructorIO constructorClient = new ConstructorIO("[your API token]", "[your a
 
 ```csharp
 using ConstructorIO;
-var ConstructorIOAPI = new ConstructorIOAPI("[your API token]", "[your autocomplete key]");
+var ConstructorIOAPI = new ConstructorIOAPI("[your API token]",
+  "[your autocomplete key]");
 ```
 
 > Make sure to replace `[your API token]` with your API token from [your dashboard](/dashboard).
