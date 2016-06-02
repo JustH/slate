@@ -66,7 +66,8 @@ ListItem item = new ListItem(
 
 bool success = ConstructorIOAPI.Add(item);
 
-// "item" is a ListItem containing key / value pairs as specified in parameters below.
+// "item" is a ListItem containing key / value pairs as specified
+// in parameters below.
 ```
 
 > The above command returns a 204 Success response on success.
@@ -154,7 +155,11 @@ ListItem item = new ListItem(
 
 bool success = ConstructorIOAPI.AddOrUpdate(item);
 
-// "item" is a ListItem containing key / value pairs as specified in parameters below. If an item with the name "Power drill" already exists, its Description, Url and ImageUrl will be updated as indicated. Otherwise a new item will be created with these values.
+// "item" is a ListItem containing key / value pairs as specified
+//   in parameters below. If an item with the name "Power drill"
+//   already exists, its Description, Url and ImageUrl will be
+//   updated as indicated. Otherwise a new item will be created
+//   with these values.
 ```
 
 
@@ -271,8 +276,10 @@ itemList.Add(new ListItem(
 
 bool success = ConstructorIOAPI.AddBatch(itemList, "Products");
 
-// itemList is a List<ListItem> composed of key / value pairs as specified in parameters below.
-// "Products" is the  autocomplete section to which you'd like to add the items contained in itemList
+// itemList is a List<ListItem> composed of key / value pairs as
+//   specified in parameters below.
+// "Products" is the  autocomplete section to which you'd like to
+//   add the items contained in itemList
 ```
 
 > The above command(s) return a 204 Success response on success.
@@ -374,8 +381,12 @@ itemList.Add(new ListItem(
 
 bool success = ConstructorIOAPI.AddOrUpdateBatch(itemList, "Products");
 
-// itemList is a List<ListItem> composed of key / value pairs as specified in parameters below. If "Power drill" or "Hammer" already exist, their metadata will be updated as above. Otherwise new items will be created with these values.
-// "Products" is the  autocomplete section to which you'd like to add the items contained in itemList
+// itemList is a List<ListItem> composed of key / value pairs as
+//   specified in parameters below. If "Power drill" or "Hammer"
+//   already exist, their metadata will be updated as above.
+//   Otherwise new items will be created with these values.
+// "Products" is the  autocomplete section to which you'd like to
+//   add the items contained in itemList
 ```
 
 > The above command(s) return a 204 Success response on success.
@@ -456,7 +467,8 @@ ListItem item = new ListItem(
 
 bool success = ConstructorIOAPI.Remove(item);
 
-// "item" is a ListItem with the Name or ID for the item you'd like to remove
+// "item" is a ListItem with the Name or ID for the item you'd
+//   like to remove
 ```
 
 > The above command returns a 204 Success response on success.
@@ -516,7 +528,8 @@ itemList.Add(new ListItem(ID: "245"));
 
 bool success = ConstructorIOAPI.RemoveBatch(itemList, "Products");
 
-// itemList is a List<ListItem> with the IDs and/or Names of the items you'd like to remove.
+// itemList is a List<ListItem> with the IDs and/or Names of
+//   the items you'd like to remove.
 // "Products" is an autocomplete section name.
 ```
 > The above command returns a 204 Success response on success.
@@ -616,7 +629,8 @@ item.Name = "Power drill";
 item.Description = "Like a drill, with power."
 
 bool success = ConstructorIOAPI.Modify(item);
-// "Drill" is the original item name as you previously saved it in our system
+// "Drill" is the original item name as you previously saved it
+//   in our system
 // "Power drill" is the new item name
 // "Description" is a new description to add for the item
 ```
