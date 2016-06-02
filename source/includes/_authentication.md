@@ -105,7 +105,7 @@ boolean isValid = constructorio.verify();
 ```
 
 ```csharp
-bool isValid = constructorio.Verify();
+bool isValid = ConstructorIOAPI.Verify();
 ```
 
 You can verify that authentication works correctly by issuing a simple verification request.
